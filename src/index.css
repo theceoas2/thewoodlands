@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+    /* Properto-inspired Earthy/Premium Palette */
+    --color-forest: #2C3E30;
+    /* Deep Green */
+    --color-coffee: #4A3B32;
+    /* Deep Brown - Primary Dark */
+    --color-sand: #F5F2EB;
+    /* Light Beige - Main Background */
+    --color-stone: #E6E2DD;
+    /* Darker Beige - Secondary/Border */
+    --color-charcoal: #1A1A1A;
+    /* Text Main */
+    --color-white: #FFFFFF;
+    --color-gold: #C5A065;
+    /* Muted Gold Accent */
+
+    /* Re-mapping old variables to new palette to prevent breaking immediately, 
+     but we will prefer using the specific names below */
+    --color-navy: var(--color-coffee);
+    --color-navy-800: #3E3028;
+    --color-navy-900: #2D231D;
+    --color-cream: var(--color-sand);
+
+    --font-heading: 'Outfit', sans-serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: var(--color-sand);
+    color: var(--color-charcoal);
+}
+
+/* Component styles */
+.btn {
+    @apply inline-flex items-center justify-center px-8 py-4 rounded-none font-medium text-sm tracking-wide transition-all duration-300;
+}
+
+.btn-primary {
+    @apply bg-coffee text-white hover:bg-navy-900;
+}
+
+.btn-gold {
+    @apply bg-gold text-white hover:bg-coffee;
+}
+
+.container {
+    @apply max-w-[1400px] mx-auto px-6 md:px-12;
+}
+
+/* Typography Overrides */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply font-heading tracking-tight;
+}
+
+body {
+    @apply font-body antialiased;
+}
