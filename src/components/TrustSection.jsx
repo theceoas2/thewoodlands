@@ -1,11 +1,17 @@
 import React from 'react';
 import { ShieldCheck, Building2, Video, FileCheck, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import render2 from '../assets/render-2.png';
+import render3 from '../assets/render-3.png';
 
 const TrustSection = () => {
     return (
-        <section className="py-24 bg-sand border-y border-coffee/5">
-            <div className="container mx-auto">
+        <section className="py-24 bg-sand border-y border-coffee/5 relative overflow-hidden">
+            {/* Background Decor */}
+            <img src={render2} alt="" className="absolute top-0 right-0 w-96 opacity-5 rotate-12 pointer-events-none mix-blend-multiply" />
+            <img src={render3} alt="" className="absolute bottom-0 left-0 w-96 opacity-5 -rotate-6 pointer-events-none mix-blend-multiply" />
+
+            <div className="container mx-auto relative z-10">
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <span className="text-[10px] font-bold tracking-widest text-coffee/60 uppercase mb-2 block">
                         Safe & Secure Investment

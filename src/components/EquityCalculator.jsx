@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { motion, useSpring, useTransform } from 'framer-motion';
 import { Calculator, ArrowRight } from 'lucide-react';
+import cutout1 from '../assets/cutout-1.png';
+import cutout2 from '../assets/cutout-2.png';
+import cutout3 from '../assets/cutout-3.png';
 
 const units = [
     { id: 1, name: "1 Bed Apartment (Standard)", actualPrice: 105212800, outrightPrice: 86240000, paymentPlanPrice: 95964000 },
@@ -29,9 +32,14 @@ const EquityCalculator = () => {
     }, [selectedUnit.outrightPrice, springValue]);
 
     return (
-        <section className="py-24 bg-coffee text-white relative overflow-hidden">
+        <section className="py-12 md:py-24 bg-coffee text-white relative overflow-hidden">
             {/* Background Decorative Gradient */}
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/20"></div>
+
+            {/* Decorative Elements */}
+            <img src={cutout1} alt="" className="absolute -top-20 -left-20 w-64 md:w-96 opacity-5 rotate-180 pointer-events-none" />
+            <img src={cutout2} alt="" className="absolute top-1/4 -right-32 w-80 md:w-[500px] opacity-5 pointer-events-none mix-blend-soft-light" />
+            <img src={cutout3} alt="" className="absolute -bottom-32 left-1/4 w-80 md:w-[600px] opacity-5 rotate-45 pointer-events-none" />
 
             <div className="container mx-auto relative z-10">
                 <div className="grid lg:grid-cols-2 gap-16 items-center">

@@ -8,6 +8,10 @@ export default {
         extend: {
             colors: {
                 forest: '#1E3D2F',
+                coffee: '#2C1810', // Dark wood/coffee
+                sand: '#E6E1D6',   // Warm beige/sand
+                stone: '#8B8077',
+                charcoal: '#2D2D2D',
                 navy: {
                     DEFAULT: '#0F1B2D',
                     800: '#16253B',

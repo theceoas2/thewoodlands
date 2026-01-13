@@ -1,5 +1,10 @@
 import React, { useRef, useState } from 'react';
 import { PlayCircle, PauseCircle } from 'lucide-react';
+import projectVideo from '../assets/project-tour-h264.mp4';
+import projectPoster from '../assets/project-poster.jpg';
+import render4 from '../assets/render-4.png';
+import cutout4 from '../assets/cutout-4.png';
+import cutout5 from '../assets/cutout-5.png';
 
 const ProjectOverview = () => {
     const [isPlaying, setIsPlaying] = useState(false);
@@ -17,8 +22,13 @@ const ProjectOverview = () => {
     };
 
     return (
-        <section className="py-24 bg-white">
-            <div className="container mx-auto">
+        <section className="py-24 bg-white relative overflow-hidden">
+            {/* Decorative Cutouts */}
+            {/* Decorative Cutouts */}
+            <img src={cutout4} alt="" className="absolute top-0 right-0 w-64 md:w-96 opacity-10 -rotate-12 pointer-events-none" />
+            <img src={cutout5} alt="" className="absolute bottom-1/4 left-0 w-80 md:w-[500px] opacity-10 rotate-12 pointer-events-none" />
+
+            <div className="container mx-auto relative z-10">
                 <div className="max-w-6xl mx-auto">
                     {/* Header */}
                     <div className="text-center mb-16">
@@ -40,9 +50,10 @@ const ProjectOverview = () => {
                             ref={videoRef}
                             className="w-full h-full object-cover"
                             loop
-                            poster="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2700&auto=format&fit=crop"
+                            playsInline
+                            poster={projectPoster}
                         >
-                            <source src="https://assets.mixkit.co/videos/preview/mixkit-modern-apartment-building-exterior-at-sunset-31976-large.mp4" type="video/mp4" />
+                            <source src={projectVideo} type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
 
@@ -64,7 +75,7 @@ const ProjectOverview = () => {
                             <h3 className="text-2xl font-heading font-medium text-coffee mb-6">
                                 Where Nature Meets Modernity
                             </h3>
-                            <div className="space-y-6 text-gray-600 font-light leading-relaxed">
+                            <div className="space-y-6 text-gray-600 font-light leading-relaxed mb-8">
                                 <p>
                                     Located in the rapidly appreciating district of Wuye, The Woodlands offers a rare escape.
                                     We combine "Quiet Luxury" with EDGE-Certified sustainability.
@@ -73,6 +84,7 @@ const ProjectOverview = () => {
                                     Enjoy 24/7 power via inverter solar systems, double-glazed noise cancellation, and a community designed for wellness.
                                 </p>
                             </div>
+                            <img src={render4} alt="The Woodlands Architecture" className="w-full rounded-none shadow-xl border border-coffee/10" />
                         </div>
                         <div className="bg-sand/30 p-8 border border-coffee/5">
                             <ul className="space-y-6">
@@ -103,6 +115,7 @@ const ProjectOverview = () => {
                 </div>
 
                 {/* Project Specifications Section */}
+                {/* Project Specifications Section */}
                 <div className="mt-24 border-t border-coffee/10 pt-16">
                     <div className="text-center mb-12">
                         <span className="text-[10px] font-bold tracking-widest text-gold uppercase mb-3 block">
@@ -113,39 +126,61 @@ const ProjectOverview = () => {
                         </h3>
                     </div>
 
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-sm">
-                        {/* Development Breakdown */}
+                    <div className="grid md:grid-cols-2 gap-8 text-sm">
+                        {/* Kitchen */}
                         <div className="bg-sand/20 p-8 border border-coffee/5 hover:border-gold transition-colors">
-                            <h4 className="font-heading font-bold text-coffee mb-4 text-base">The Collection</h4>
-                            <ul className="space-y-3 text-gray-600 font-light">
-                                <li className="flex gap-2">• 12 Nos Super Luxury 3 Bed Apartments</li>
-                                <li className="flex gap-2">• 4 Nos 5 Bedroom Penthouses</li>
-                                <li className="flex gap-2">• 10 Nos 7 Bedroom Luxury Stand Alones</li>
-                                <li className="flex gap-2">• 5 Nos 5 Bedroom Luxury Terraces</li>
+                            <h4 className="font-heading font-bold text-coffee mb-4 text-base tracking-wide uppercase text-xs">Kitchen</h4>
+                            <ul className="space-y-3 text-gray-600 font-light leading-relaxed">
+                                <li className="flex gap-2"> Low emission engineered wood, FSC-certified timber.</li>
+                                <li className="flex gap-2"> Stainless steel integrated sink with chrome mono-bloc mixer tap.</li>
+                                <li className="flex gap-2"> Low energy ceiling down lights and under-cabinet lighting.</li>
+                                <li className="flex gap-2"> Concealed white multi-gang appliance panel.</li>
+                                <li className="flex gap-2"> Wood-look tile flooring.</li>
+                                <li className="flex gap-2"> Frame-less ceramic glass hob & Recirculating extractor hood.</li>
+                                <li className="flex gap-2"> Integrated stainless steel electric oven, microwave & dishwasher.</li>
+                                <li className="flex gap-2"> Matt lacquer timber veneer finish to cupboard units.</li>
                             </ul>
                         </div>
 
-                        {/* Amenities */}
+                        {/* Bathrooms */}
                         <div className="bg-sand/20 p-8 border border-coffee/5 hover:border-gold transition-colors">
-                            <h4 className="font-heading font-bold text-coffee mb-4 text-base">Key Features</h4>
-                            <ul className="space-y-3 text-gray-600 font-light">
-                                <li className="flex gap-2">• Entrance Hall with Front Desk</li>
-                                <li className="flex gap-2">• Clubhouse with Swimming Pool</li>
-                                <li className="flex gap-2">• Reticulated Gas & Smart Meters</li>
-                                <li className="flex gap-2">• Multiple Power Sources (24/7 Supply)</li>
-                                <li className="flex gap-2">• Outdoor/Indoor Living Blend with Large Balconies</li>
+                            <h4 className="font-heading font-bold text-coffee mb-4 text-base tracking-wide uppercase text-xs">Bathrooms & Showers</h4>
+                            <ul className="space-y-3 text-gray-600 font-light leading-relaxed">
+                                <li className="flex gap-2"> White counter-top wash hand basin with wall-mounted chrome mixer tap.</li>
+                                <li className="flex gap-2"> Low flow faucet, dual flush toilets, low flow shower heads.</li>
+                                <li className="flex gap-2"> Chrome effect thermostatically controlled electric towel rails.</li>
+                                <li className="flex gap-2"> Tiled/Spv finish to all walls with feature tiling.</li>
+                                <li className="flex gap-2"> Fitted wall cabinet with mirrored door, shelves, and shaver socket.</li>
+                                <li className="flex gap-2"> Feature niche with glass shelving and downlights above WC and bath.</li>
+                                <li className="flex gap-2"> Chrome ceiling mounted shower head & thermostatic mixer.</li>
                             </ul>
                         </div>
 
-                        {/* Floor Plan Highlights */}
+                        {/* Interior & Balconies */}
                         <div className="bg-sand/20 p-8 border border-coffee/5 hover:border-gold transition-colors">
-                            <h4 className="font-heading font-bold text-coffee mb-4 text-base">Floor Plan Highlights</h4>
-                            <ul className="space-y-3 text-gray-600 font-light">
-                                <li className="flex gap-2">• Apartment Ground Floor: Reception (31m²)</li>
-                                <li className="flex gap-2">• Ground Floor Parking</li>
-                                <li className="flex gap-2">• EDGE Certified Estate</li>
-                                <li className="flex gap-2">• Well Managed Serene Environment</li>
-                                <li className="flex gap-2">• Unmatched Security Infrastructure</li>
+                            <h4 className="font-heading font-bold text-coffee mb-4 text-base tracking-wide uppercase text-xs">Interior & Balconies</h4>
+                            <ul className="space-y-3 text-gray-600 font-light leading-relaxed">
+                                <li className="flex gap-2"> Well proportioned balconies/terraces with decking and glass balustrade.</li>
+                                <li className="flex gap-2"> 2.4m matt finished internal doors with feature trim.</li>
+                                <li className="flex gap-2"> Veneered solid core entrance door with feature trim.</li>
+                                <li className="flex gap-2"> Tiled skirting & timber architraves.</li>
+                                <li className="flex gap-2"> Polished chrome door handles throughout.</li>
+                                <li className="flex gap-2"> Fitted wardrobe with mirrored sliding doors.</li>
+                                <li className="flex gap-2"> Tiled/Marble/Wooden flooring.</li>
+                            </ul>
+                        </div>
+
+                        {/* Electric Fittings */}
+                        <div className="bg-sand/20 p-8 border border-coffee/5 hover:border-gold transition-colors">
+                            <h4 className="font-heading font-bold text-coffee mb-4 text-base tracking-wide uppercase text-xs">Electric Fittings</h4>
+                            <ul className="space-y-3 text-gray-600 font-light leading-relaxed">
+                                <li className="flex gap-2"> Low energy ceiling down-lights throughout with motion sensors.</li>
+                                <li className="flex gap-2"> Automatic lighting to cupboards.</li>
+                                <li className="flex gap-2"> TV (terrestrial and satellite) points to principal living area and bedrooms.</li>
+                                <li className="flex gap-2"> Telephone points to living area and bedrooms.</li>
+                                <li className="flex gap-2"> Grey electrical fittings at high and low levels.</li>
+                                <li className="flex gap-2"> Energy saving efficient external light for balcony/terrace.</li>
+                                <li className="flex gap-2"> Chrome exposed thermostatic.</li>
                             </ul>
                         </div>
                     </div>

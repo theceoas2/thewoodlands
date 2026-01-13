@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ChevronRight } from 'lucide-react';
-import heroBg from '../assets/hero-bg-2.png';
+import heroBg from '../assets/cutout-1.png';
 
 
 const Hero = () => {
@@ -31,22 +31,38 @@ const Hero = () => {
             <div className="h-px w-12 bg-white/30"></div>
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-[1.1]">
-            Own the Future of Wuye. <br />
-            <span className="text-gold">83% Appreciation</span> in 12 Months*.
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+            Institutional-Grade Real Estate. <br />
+            <span className="text-gold">Built on Certainty.</span>
           </h1>
-          <p className="text-lg text-white/90 mb-10 max-w-xl font-light leading-relaxed">
-            Secure a Government-Partnered, EDGE-Certified asset in Abuja's fastest-growing district.
-            Global C-of-O. Unmatched Returns.
+          <p className="text-base md:text-lg text-white/90 mb-8 max-w-2xl font-light leading-relaxed">
+            In a market defined by speculation, The Woodlands stands apart.
+            <br className="hidden md:block" />
+            <span className="block mt-4 text-white/80">
+              Partnered with the <strong>Enugu State Government</strong>. Certified by <strong>EDGE</strong>. Verified with a <strong>Global C-of-O</strong>.
+            </span>
+            <span className="block mt-2">
+              We trade "promises" for radical transparency and milestone-based delivery. Secure your fortress for capital in Abuja’s greenest district.
+            </span>
           </p>
 
           <div className="flex flex-col sm:flex-row items-center gap-0 mb-6">
-            <button className="btn bg-white text-coffee hover:bg-stone px-10 min-w-[200px]">
+            <a
+              href="https://wa.me/2349067779344?text=Hello%2C%20I%20am%20interested%20in%20The%20Woodlands%2C%20Wuye.%20I%20would%20like%20to%20schedule%20an%20inspection."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn bg-white text-coffee hover:bg-stone px-10 min-w-[200px] text-center flex items-center justify-center"
+            >
               Secure Allocation
-            </button>
-            <button className="btn bg-coffee text-white border-l border-white/20 hover:bg-navy-900 px-10 min-w-[200px] flex items-center gap-2">
+            </a>
+            <a
+              href="https://wa.me/2349067779344?text=Hello%2C%20I%20am%20interested%20in%20The%20Woodlands%2C%20Wuye.%20Please%20share%20the%20current%20availability%20list."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn bg-coffee text-white border-l border-white/20 hover:bg-navy-900 px-10 min-w-[200px] flex items-center justify-center gap-2"
+            >
               View Availability <ChevronRight size={16} />
-            </button>
+            </a>
           </div>
 
           <p className="text-[10px] text-white/40 italic">

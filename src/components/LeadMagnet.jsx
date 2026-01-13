@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, ArrowRight, CheckCircle } from 'lucide-react';
+import render6 from '../assets/render-6.png';
 
 const LeadMagnet = () => {
     const [email, setEmail] = useState('');
@@ -20,6 +21,7 @@ const LeadMagnet = () => {
         <section className="py-24 bg-coffee text-white relative overflow-hidden">
             {/* Background decoration */}
             <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gold opacity-5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+            <img src={render6} alt="" className="absolute inset-0 w-full h-full object-cover opacity-10 mix-blend-overlay pointer-events-none" />
 
             <div className="container mx-auto relative z-10">
                 <div className="max-w-4xl mx-auto bg-white/5 border border-white/10 p-8 md:p-16 backdrop-blur-sm">

@@ -109,6 +109,9 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import MilestonesPage from './pages/MilestonesPage';
 import TrustSection from './components/TrustSection';
 import ProjectOverview from './components/ProjectOverview';
+import Gallery from './components/Gallery';
+import FloorPlans from './components/FloorPlans';
+import LeadMagnet from './components/LeadMagnet';
 
 // ... (Navbar and Footer components remain unchanged)
 
@@ -116,6 +119,8 @@ const HomePage = () => (
   <>
     <Hero />
     <ProjectOverview />
+    <FloorPlans />
+    <Gallery />
     <PerspectiveTabs />
     <ConstructionTracker />
     <EquityCalculator />

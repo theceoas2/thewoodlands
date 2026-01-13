@@ -1,6 +1,7 @@
 import React from 'react';
 import { Check, Hammer, MapPin, FileCheck, Building2, Key, Video, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import cutout2 from '../assets/cutout-2.png';
 
 const milestones = [
     { id: 1, title: "Land Acquisition & Title Perfection", status: "completed", date: "Q1 2024", icon: MapPin },
@@ -13,23 +14,25 @@ const milestones = [
 
 const ConstructionTracker = () => {
     return (
-        <section className="py-24 bg-sand">
-            <div className="container mx-auto">
-                <div className="flex flex-col md:flex-row md:items-end justify-between mb-20">
+        <section className="py-12 md:py-24 bg-sand relative overflow-hidden">
+            {/* Decorative Element */}
+            <img src={cutout2} alt="" className="absolute top-0 right-0 w-64 md:w-96 opacity-10 rotate-180 pointer-events-none" />
+            <div className="container mx-auto relative z-10">
+                <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 md:mb-20">
                     <div>
                         <span className="text-[10px] font-bold tracking-widest uppercase text-gold mb-2 block">Development Timeline</span>
-                        <h2 className="text-4xl font-medium text-coffee">Project Milestones</h2>
+                        <h2 className="text-3xl md:text-4xl font-medium text-coffee">Project Milestones</h2>
                     </div>
-                    <p className="text-gray-500 max-w-md text-sm mt-4 md:mt-0 leading-relaxed">
-                        We believe in complete transparency. Track every stage of the development from land acquisition to final handover.
+                    <p className="text-gray-500 max-w-md text-sm mt-4 md:mt-0 leading-relaxed text-xs md:text-sm">
+                        We believe in transparency. Track every stage from acquisition to final handover.
                     </p>
                 </div>
 
                 <div className="max-w-4xl mx-auto relative">
                     {/* Vertical Line */}
-                    <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-px bg-coffee/10 -translate-x-1/2 md:translate-x-0"></div>
+                    <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-coffee/10 -translate-x-1/2 md:translate-x-0"></div>
 
-                    <div className="space-y-16">
+                    <div className="space-y-8 md:space-y-16">
                         {milestones.map((step, index) => {
                             const isEven = index % 2 === 0;
                             const isActive = step.status === 'active';
