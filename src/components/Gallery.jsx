@@ -9,13 +9,16 @@ import render7 from '../assets/render-7.jpg';
 import render8 from '../assets/render-8.jpg';
 import heroBg2 from '../assets/hero-bg-2.jpg';
 import projectPoster from '../assets/project-poster.jpg';
+import galleryCutout2 from '../assets/gallery-cutout-2.jpg';
+import galleryCutout4 from '../assets/gallery-cutout-4.jpg';
+import galleryCutout5 from '../assets/gallery-cutout-5.jpg';
 
 import cutout1 from '../assets/cutout-1.png';
 import cutout3 from '../assets/cutout-3.png';
 import cutout5 from '../assets/cutout-5.png';
 
 const galleryImages = [
-    render1, render2, render3, render8, render5, render6, render7, heroBg2, projectPoster
+    render1, galleryCutout4, render2, render3, galleryCutout2, render8, render5, galleryCutout5, render6, render7, heroBg2, projectPoster
 ];
 
 const Gallery = () => {
