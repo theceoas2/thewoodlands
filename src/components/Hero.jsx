@@ -1,10 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ChevronRight } from 'lucide-react';
-import heroBg from '../assets/hero-bg-2.jpg';
+import heroBg from '../assets/hero-bg-final.jpg';
 
 
-import heroBgMobile from '../assets/hero-bg-mobile.jpg';
+import heroBgMobile from '../assets/hero-bg-final-mobile.jpg';
 
 
 const Hero = () => {
