@@ -21,7 +21,7 @@ const ConstructionTracker = () => {
                 <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 md:mb-20">
                     <div>
                         <span className="text-[10px] font-bold tracking-widest uppercase text-gold mb-2 block">Development Timeline</span>
-                        <h2 className="text-3xl md:text-4xl font-medium text-coffee">Project Milestones</h2>
+                        <h2 className="text-2xl md:text-4xl font-medium text-coffee">Project Milestones</h2>
                     </div>
                     <p className="text-gray-500 max-w-md text-sm mt-4 md:mt-0 leading-relaxed text-xs md:text-sm">
                         We believe in transparency. Track every stage from acquisition to final handover.

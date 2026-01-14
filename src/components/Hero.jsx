@@ -1,19 +1,26 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ChevronRight } from 'lucide-react';
-import heroBg from '../assets/cutout-1.png';
+import heroBg from '../assets/hero-bg-2.jpg';
+
+
+import heroBgMobile from '../assets/hero-bg-mobile.jpg';
 
 
 const Hero = () => {
   return (
     <section className="relative h-screen min-h-[700px] flex items-center text-white overflow-hidden bg-coffee">
       {/* Background Image with Overlay */}
-      <div
-        className="absolute inset-0 z-0 bg-cover bg-center"
-        style={{
-          backgroundImage: `url(${heroBg})`,
-        }}
-      >
+      <div className="absolute inset-0 z-0">
+        <img
+          src={heroBg}
+          srcSet={`${heroBgMobile} 800w, ${heroBg} 1920w`}
+          sizes="(max-width: 768px) 100vw, 100vw"
+          alt="The Woodlands Hero"
+          className="w-full h-full object-cover"
+          loading="eager"
+          fetchPriority="high"
+        />
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent"></div>
       </div>
 

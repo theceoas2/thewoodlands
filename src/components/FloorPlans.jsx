@@ -24,25 +24,25 @@ const FloorPlans = () => {
     return (
         <section className="py-24 bg-white border-t border-coffee/5">
             <div className="container mx-auto">
-                <div className="text-center mb-16">
+                <div className="text-center mb-8 md:mb-16">
                     <span className="text-[10px] font-bold tracking-widest text-gold uppercase mb-3 block">
                         Space & Layout
                     </span>
-                    <h2 className="text-3xl md:text-5xl font-heading font-medium text-coffee mb-6">
+                    <h2 className="text-2xl md:text-5xl font-heading font-medium text-coffee mb-6">
                         Floor Plans
                     </h2>
                 </div>
 
-                <div className="flex flex-col lg:flex-row gap-12 items-start">
+                <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
                     {/* Sidebar / List */}
-                    <div className="w-full lg:w-1/3 bg-sand/20 p-8 border border-coffee/5">
-                        <h3 className="font-bold text-coffee mb-6 uppercase tracking-wider text-xs">Select Unit Type</h3>
-                        <div className="space-y-2">
+                    <div className="w-full lg:w-1/3 bg-sand/20 p-6 md:p-8 border border-coffee/5">
+                        <h3 className="font-bold text-coffee mb-4 md:mb-6 uppercase tracking-wider text-xs">Select Unit Type</h3>
+                        <div className="space-y-1 md:space-y-2">
                             {plans.map((plan, index) => (
                                 <button
                                     key={plan.id}
                                     onClick={() => setActiveTab(index)}
-                                    className={`w-full text-left px-6 py-4 flex justify-between items-center transition-all duration-300
+                                    className={`w-full text-left px-4 py-3 md:px-6 md:py-4 flex justify-between items-center transition-all duration-300 text-sm md:text-base
                                     ${activeTab === index
                                             ? 'bg-coffee text-white shadow-lg'
                                             : 'bg-white hover:bg-white/80 text-gray-500'}`}
@@ -63,19 +63,19 @@ const FloorPlans = () => {
                                 className="w-full h-full object-contain max-h-[600px]"
                             />
                             {/* Overlay Info */}
-                            <div className="absolute bottom-0 left-0 right-0 bg-white/95 backdrop-blur-md p-8 border-t border-coffee/10">
+                            <div className="absolute bottom-0 left-0 right-0 bg-white/95 backdrop-blur-md p-4 md:p-8 border-t border-coffee/10">
                                 <div className="flex justify-between items-end">
                                     <div>
-                                        <p className="text-gold text-xs font-bold uppercase tracking-widest mb-1">{plans[activeTab].type} Collection</p>
-                                        <h3 className="text-3xl font-heading text-coffee">{plans[activeTab].name}</h3>
+                                        <p className="text-gold text-[10px] font-bold uppercase tracking-widest mb-1">{plans[activeTab].type} Collection</p>
+                                        <h3 className="text-xl md:text-3xl font-heading text-coffee">{plans[activeTab].name}</h3>
                                     </div>
-                                    <div className="flex gap-8 text-coffee/80">
+                                    <div className="flex gap-4 md:gap-8 text-coffee/80">
                                         <div className="text-center">
-                                            <span className="block font-bold text-xl">{plans[activeTab].size}</span>
+                                            <span className="block font-bold text-sm md:text-xl">{plans[activeTab].size}</span>
                                             <span className="text-[10px] uppercase opacity-60">Total Area</span>
                                         </div>
                                         <div className="text-center">
-                                            <span className="block font-bold text-xl">{plans[activeTab].beds}</span>
+                                            <span className="block font-bold text-sm md:text-xl">{plans[activeTab].beds}</span>
                                             <span className="text-[10px] uppercase opacity-60">Bedrooms</span>
                                         </div>
                                     </div>
