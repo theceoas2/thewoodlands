@@ -32,7 +32,7 @@ const ConstructionTracker = () => {
                     {/* Vertical Line */}
                     <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-coffee/10 -translate-x-1/2 md:translate-x-0"></div>
 
-                    <div className="space-y-8 md:space-y-16">
+                    <div className="space-y-4 md:space-y-16">
                         {milestones.map((step, index) => {
                             const isEven = index % 2 === 0;
                             const isActive = step.status === 'active';
@@ -42,7 +42,7 @@ const ConstructionTracker = () => {
                                 <div key={step.id} className={`relative flex items-center md:justify-between ${isEven ? 'flex-row' : 'flex-row-reverse md:flex-row'}`}>
 
                                     {/* Left Side (Content for Even, Empty for Odd) */}
-                                    <div className={`w-full md:w-1/2 pl-24 md:pl-0 ${isEven ? 'md:pr-24 md:text-right' : 'md:pl-24'}`}>
+                                    <div className={`w-full md:w-1/2 pl-12 md:pl-0 ${isEven ? 'md:pr-24 md:text-right' : 'md:pl-24'}`}>
                                         <div className={isEven ? '' : 'hidden md:block'}>
                                             {isEven && (
                                                 <>
@@ -71,7 +71,7 @@ const ConstructionTracker = () => {
                                     </div>
 
                                     {/* Right Side */}
-                                    <div className={`w-full md:w-1/2 pl-24 md:pl-0 ${!isEven ? 'md:pr-24 md:text-right' : 'md:pl-24'}`}>
+                                    <div className={`w-full md:w-1/2 pl-12 md:pl-0 ${!isEven ? 'md:pr-24 md:text-right' : 'md:pl-24'}`}>
                                         <div className={!isEven ? '' : 'hidden md:block'}>
                                             {!isEven && (
                                                 <>

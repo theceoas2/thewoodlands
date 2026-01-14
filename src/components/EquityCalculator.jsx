@@ -44,15 +44,15 @@ const EquityCalculator = () => {
             <div className="container mx-auto relative z-10">
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
                     <div>
-                        <span className="text-gold font-bold tracking-widest uppercase text-xs mb-4 block">Pricing Structure</span>
-                        <h2 className="text-4xl md:text-5xl font-heading font-medium mb-6 leading-tight">
+                        <span className="text-gold font-bold tracking-widest uppercase text-[10px] md:text-xs mb-2 md:mb-4 block">Pricing Structure</span>
+                        <h2 className="text-3xl md:text-5xl font-heading font-medium mb-4 leading-tight">
                             Early-Stage Pricing, <br />Structured for Completion
                         </h2>
-                        <p className="text-white/70 text-lg leading-relaxed mb-8 max-w-md">
+                        <p className="text-white/70 text-sm md:text-lg leading-relaxed mb-4 md:mb-8 max-w-md">
                             Off-plan pricing allows buyers to secure today’s price against time, inflation, and completion.
                         </p>
 
-                        <div className="bg-white/5 border border-white/10 p-8 mb-8">
+                        <div className="bg-white/5 border border-white/10 p-4 md:p-8 mb-4 md:mb-8">
                             <label className="block text-xs font-bold uppercase tracking-widest text-white/60 mb-4">Select Unit Type</label>
                             <div className="relative">
                                 <select
@@ -70,7 +70,7 @@ const EquityCalculator = () => {
                             </div>
                         </div>
 
-                        <div className="text-white/40 text-sm leading-relaxed max-w-md space-y-4">
+                        <div className="hidden md:block text-white/40 text-sm leading-relaxed max-w-md space-y-4">
                             <p>
                                 In Nigeria, construction costs and property prices typically adjust over time due to inflation, demand growth, and infrastructure development.
                             </p>
@@ -80,8 +80,8 @@ const EquityCalculator = () => {
                         </div>
                     </div>
 
-                    <div className="relative">
-                        <div className="grid gap-6">
+                    <div className="relative mt-[-2rem] md:mt-0">
+                        <div className="grid gap-3 md:gap-6">
                             {/* Market Value */}
                             <div className="p-6 bg-sand/10 border border-white/10 backdrop-blur-sm text-white">
                                 <p className="text-[10px] font-bold uppercase tracking-widest text-white/60 mb-2">Standard Market Valuation</p>
