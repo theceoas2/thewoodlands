@@ -111,12 +111,13 @@ import TrustSection from './components/TrustSection';
 import ProjectOverview from './components/ProjectOverview';
 import Gallery from './components/Gallery';
 import FloorPlans from './components/FloorPlans';
-import LeadMagnet from './components/LeadMagnet';
+import Preloader from './components/Preloader';
 
 // ... (Navbar and Footer components remain unchanged)
 
 const HomePage = () => (
   <>
+    <Preloader />
     <Hero />
     <ProjectOverview />
     <FloorPlans />

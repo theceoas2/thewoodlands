@@ -38,18 +38,14 @@ const Hero = () => {
             <div className="h-px w-12 bg-white/30"></div>
           </div>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-            Institutional-Grade Real Estate. <br />
+          <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 leading-tight">
+            Institutional Real Estate. <br />
             <span className="text-gold">Built on Certainty.</span>
           </h1>
-          <p className="text-base md:text-lg text-white/90 mb-8 max-w-2xl font-light leading-relaxed">
-            In a market defined by speculation, The Woodlands stands apart.
-            <br className="hidden md:block" />
-            <span className="block mt-4 text-white/80">
-              Partnered with the <strong>Enugu State Government</strong>. Certified by <strong>EDGE</strong>. Verified with a <strong>Global C-of-O</strong>.
-            </span>
+          <p className="text-base md:text-xl text-white/90 mb-8 max-w-xl font-light leading-relaxed">
+            Partnered with the <strong>Enugu State Govt</strong>. EDGE Certified. Global C-of-O.
             <span className="block mt-2">
-              We trade "promises" for radical transparency and milestone-based delivery. Secure your fortress for capital in Abuja’s greenest district.
+              Secure your capital in Abuja’s greenest district.
             </span>
           </p>
 
