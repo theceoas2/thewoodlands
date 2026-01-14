@@ -52,6 +52,7 @@ const ProjectOverview = () => {
                             loop
                             playsInline
                             poster={projectPoster}
+                            preload="none"
                         >
                             <source src={projectVideo} type="video/mp4" />
                             Your browser does not support the video tag.

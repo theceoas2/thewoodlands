@@ -48,6 +48,7 @@ const Gallery = () => {
                             <img
                                 src={src}
                                 alt={`Gallery ${index + 1}`}
+                                loading="lazy"
                                 className="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-105"
                             />
                             <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500 pointer-events-none"></div>

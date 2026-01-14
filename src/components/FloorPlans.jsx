@@ -41,6 +41,10 @@ const FloorPlans = () => {
                             {plans.map((plan, index) => (
                                 <button
                                     key={plan.id}
+                                    onMouseEnter={() => {
+                                        const img = new Image();
+                                        img.src = plan.image;
+                                    }}
                                     onClick={() => setActiveTab(index)}
                                     className={`w-full text-left px-4 py-3 md:px-6 md:py-4 flex justify-between items-center transition-all duration-300 text-sm md:text-base
                                     ${activeTab === index
@@ -58,9 +62,10 @@ const FloorPlans = () => {
                     <div className="w-full lg:w-2/3">
                         <div className="relative bg-sand overflow-hidden group min-h-[500px] flex items-center justify-center">
                             <img
+                                key={activeTab}
                                 src={plans[activeTab].image}
                                 alt={plans[activeTab].name}
-                                className="w-full h-full object-contain max-h-[600px]"
+                                className="w-full h-full object-contain max-h-[600px] animate-fadeIn"
                             />
                             {/* Overlay Info */}
                             <div className="absolute bottom-0 left-0 right-0 bg-white/95 backdrop-blur-md p-4 md:p-8 border-t border-coffee/10">
@@ -83,6 +88,13 @@ const FloorPlans = () => {
                             </div>
                         </div>
                     </div>
+                </div>
+
+                {/* Hidden Preloader */}
+                <div className="hidden">
+                    {plans.map((plan) => (
+                        <img key={plan.id} src={plan.image} alt="" />
+                    ))}
                 </div>
             </div>
         </section>
