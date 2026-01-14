@@ -150,9 +150,14 @@ const App = () => {
 
       {/* Sticky Mobile CTA */}
       <div className="md:hidden fixed bottom-0 left-0 right-0 z-40 p-4 bg-white border-t border-coffee/10">
-        <button className="w-full btn btn-primary shadow-xl py-4 text-sm font-bold uppercase tracking-widest">
+        <a
+          href="https://wa.me/2349067779344?text=Hello%2C%20I%20am%20interested%20in%20The%20Woodlands%2C%20please%20tell%20me%20more."
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-full btn btn-primary shadow-xl py-4 text-sm font-bold uppercase tracking-widest flex items-center justify-center"
+        >
           WhatsApp Us Now
-        </button>
+        </a>
       </div>
     </div>
   );

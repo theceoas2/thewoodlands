@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
-import render1 from '../assets/render-1.png';
-import render2 from '../assets/render-2.png';
-import render3 from '../assets/render-3.png';
-import render4 from '../assets/render-4.png';
-import render5 from '../assets/render-5.png';
-import render6 from '../assets/render-6.png';
-import render7 from '../assets/render-7.png';
+import render1 from '../assets/render-1.jpg';
+import render2 from '../assets/render-2.jpg';
+import render3 from '../assets/render-3.jpg';
+import render4 from '../assets/render-4.jpg';
+import render5 from '../assets/render-5.jpg';
+import render6 from '../assets/render-6.jpg';
+import render7 from '../assets/render-7.jpg';
 
 const plans = [
     { id: 1, name: "1 Bed Apartment", type: "Standard", size: "65m²", beds: 1, baths: 1.5, image: render1 },

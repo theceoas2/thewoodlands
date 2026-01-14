@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, ArrowRight, CheckCircle } from 'lucide-react';
-import render6 from '../assets/render-6.png';
+import render6 from '../assets/render-6.jpg';
 
 const LeadMagnet = () => {
     const [email, setEmail] = useState('');

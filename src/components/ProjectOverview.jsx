@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 import { PlayCircle, PauseCircle } from 'lucide-react';
 import projectVideo from '../assets/project-tour-h264.mp4';
 import projectPoster from '../assets/project-poster.jpg';
-import render4 from '../assets/render-4.png';
+import render4 from '../assets/render-4.jpg';
 import cutout4 from '../assets/cutout-4.png';
 import cutout5 from '../assets/cutout-5.png';
 
@@ -38,7 +38,7 @@ const ProjectOverview = () => {
                         <h2 className="text-3xl md:text-5xl font-heading font-medium text-coffee mb-6">
                             Luxury Residences with Conscience
                         </h2>
-                        <p className="text-gray-500 max-w-2xl mx-auto leading-relaxed font-light text-lg">
+                        <p className="text-gray-500 max-w-2xl mx-auto leading-relaxed font-light text-base md:text-lg">
                             "Earth Approved" living in the heart of Wuye.
                             Experience the perfect blend of biophilic design, sustainable tech, and super-luxury amenities.
                         </p>

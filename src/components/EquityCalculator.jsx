@@ -83,16 +83,16 @@ const EquityCalculator = () => {
                     <div className="relative">
                         <div className="grid gap-6">
                             {/* Market Value */}
-                            <div className="p-8 bg-sand/10 border border-white/10 backdrop-blur-sm text-white">
-                                <p className="text-xs font-bold uppercase tracking-widest text-white/60 mb-2">Standard Market Valuation</p>
-                                <p className="text-3xl font-heading opacity-80">{formatCurrency(selectedUnit.actualPrice)}</p>
+                            <div className="p-6 bg-sand/10 border border-white/10 backdrop-blur-sm text-white">
+                                <p className="text-[10px] font-bold uppercase tracking-widest text-white/60 mb-2">Standard Market Valuation</p>
+                                <p className="text-2xl md:text-3xl font-heading opacity-80">{formatCurrency(selectedUnit.actualPrice)}</p>
                             </div>
 
                             {/* Outright Price (Hero) */}
-                            <div className="p-8 bg-gold text-coffee relative overflow-hidden group shadow-2xl shadow-gold/20">
+                            <div className="p-6 md:p-8 bg-gold text-coffee relative overflow-hidden group shadow-2xl shadow-gold/20">
                                 <div className="absolute top-0 right-0 w-32 h-32 bg-white/20 rounded-full -translate-y-1/2 translate-x-1/2 blur-2xl transition-transform group-hover:scale-150 duration-700"></div>
-                                <p className="text-xs font-bold uppercase tracking-widest text-coffee/80 mb-2">Early-Stage Outright Price</p>
-                                <span className="text-4xl md:text-5xl font-heading block mb-1">
+                                <p className="text-[10px] font-bold uppercase tracking-widest text-coffee/80 mb-2">Early-Stage Outright Price</p>
+                                <span className="text-3xl md:text-5xl font-heading block mb-1">
                                     <motion.span>{displayPrice}</motion.span>
                                 </span>
                                 <p className="text-[10px] text-coffee/60 italic mt-2 leading-tight">
@@ -101,11 +101,11 @@ const EquityCalculator = () => {
                             </div>
 
                             {/* Payment Plan */}
-                            <div className="p-8 border border-white/20 bg-white/5 text-white">
+                            <div className="p-6 md:p-8 border border-white/20 bg-white/5 text-white">
                                 <div className="flex justify-between items-end mb-2">
-                                    <p className="text-xs font-bold uppercase tracking-widest text-white/60">Flexible Payment Plan</p>
+                                    <p className="text-[10px] font-bold uppercase tracking-widest text-white/60">Flexible Payment Plan</p>
                                 </div>
-                                <p className="text-3xl font-heading text-sand">
+                                <p className="text-2xl md:text-3xl font-heading text-sand">
                                     {formatCurrency(selectedUnit.paymentPlanPrice)}
                                 </p>
                                 <div className="mt-4 pt-4 border-t border-white/10 grid grid-cols-2 gap-4 text-xs text-white/50">

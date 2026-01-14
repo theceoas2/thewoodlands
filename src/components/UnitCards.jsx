@@ -1,13 +1,13 @@
 import React from 'react';
 import { ArrowUpRight } from 'lucide-react';
 
-import render1 from '../assets/render-1.png';
-import render2 from '../assets/render-2.png';
-import render3 from '../assets/render-3.png';
-import render4 from '../assets/render-4.png';
-import render5 from '../assets/render-5.png';
-import render6 from '../assets/render-6.png';
-import render7 from '../assets/render-7.png';
+import render1 from '../assets/render-1.jpg';
+import render2 from '../assets/render-2.jpg';
+import render3 from '../assets/render-3.jpg';
+import render4 from '../assets/render-4.jpg';
+import render5 from '../assets/render-5.jpg';
+import render6 from '../assets/render-6.jpg';
+import render7 from '../assets/render-7.jpg';
 
 const units = [
     {
@@ -70,7 +70,7 @@ const UnitCards = () => {
                         <span className="text-[10px] font-bold tracking-widest text-gold uppercase mb-3 block">
                             The Collection
                         </span>
-                        <h2 className="text-4xl text-coffee font-medium max-w-md">
+                        <h2 className="text-3xl md:text-4xl text-coffee font-medium max-w-md">
                             Curated Living Spaces
                         </h2>
                     </div>

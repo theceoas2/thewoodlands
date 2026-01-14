@@ -1,8 +1,8 @@
 import React from 'react';
 import { ShieldCheck, Building2, Video, FileCheck, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import render2 from '../assets/render-2.png';
-import render3 from '../assets/render-3.png';
+import render2 from '../assets/render-2.jpg';
+import render3 from '../assets/render-3.jpg';
 
 const TrustSection = () => {
     return (
