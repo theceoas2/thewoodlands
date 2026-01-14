@@ -88,10 +88,10 @@ const ConstructionTracker = () => {
                                             )}
                                             {/* Mobile View for the 'other side' content */}
                                             <div className="md:hidden">
-                                                <span className={`text-[10px] font-bold tracking-widest uppercase mb-2 block ${isActive ? 'text-gold' : 'text-gray-400'}`}>
+                                                <span className={`text-[10px] font-bold tracking-widest uppercase mb-1 block ${isActive ? 'text-gold' : 'text-gray-400'}`}>
                                                     {step.date}
                                                 </span>
-                                                <h3 className={`text-xl font-heading mb-2 ${isActive ? 'text-coffee' : 'text-gray-400'}`}>{step.title}</h3>
+                                                <h3 className={`text-lg font-heading mb-1 leading-tight ${isActive ? 'text-coffee' : 'text-gray-400'}`}>{step.title}</h3>
                                             </div>
                                         </div>
                                     </div>

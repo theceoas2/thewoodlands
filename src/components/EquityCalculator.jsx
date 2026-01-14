@@ -89,13 +89,13 @@ const EquityCalculator = () => {
                             </div>
 
                             {/* Outright Price (Hero) */}
-                            <div className="p-6 md:p-8 bg-gold text-coffee relative overflow-hidden group shadow-2xl shadow-gold/20">
+                            <div className="p-4 md:p-8 bg-gold text-coffee relative overflow-hidden group shadow-2xl shadow-gold/20">
                                 <div className="absolute top-0 right-0 w-32 h-32 bg-white/20 rounded-full -translate-y-1/2 translate-x-1/2 blur-2xl transition-transform group-hover:scale-150 duration-700"></div>
-                                <p className="text-[10px] font-bold uppercase tracking-widest text-coffee/80 mb-2">Early-Stage Outright Price</p>
-                                <span className="text-3xl md:text-5xl font-heading block mb-1">
+                                <p className="text-[10px] font-bold uppercase tracking-widest text-coffee/80 mb-1">Early-Stage Outright Price</p>
+                                <span className="text-3xl md:text-5xl font-heading block mb-0 leading-none">
                                     <motion.span>{displayPrice}</motion.span>
                                 </span>
-                                <p className="text-[10px] text-coffee/60 italic mt-2 leading-tight">
+                                <p className="text-[10px] text-coffee/60 italic mt-1 leading-tight">
                                     *Secure immediate administrative allocation.
                                 </p>
                             </div>
