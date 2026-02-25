@@ -1,93 +1,56 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ChevronRight } from 'lucide-react';
 import heroBg from '../assets/hero-bg-final.jpg';
-
-
 import heroBgMobile from '../assets/hero-bg-final-mobile.jpg';
 
+const WHATSAPP_URL = "https://wa.me/2348092555222?text=Hello%2C%20I%20am%20interested%20in%20The%20Woodlands%2C%20please%20send%20me%20the%20full%20project%20details.";
 
 const Hero = () => {
   return (
-    <section className="relative h-screen min-h-[700px] flex items-center text-white overflow-hidden bg-coffee">
+    <section className="relative min-h-screen flex items-center text-white overflow-hidden bg-coffee">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
           src={heroBg}
           srcSet={`${heroBgMobile} 800w, ${heroBg} 1920w`}
           sizes="(max-width: 768px) 100vw, 100vw"
-          alt="The Woodlands Hero"
+          alt="The Woodlands Luxury Apartments Abuja"
           className="w-full h-full object-cover"
           loading="eager"
           fetchPriority="high"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30"></div>
       </div>
 
-      <div className="container relative z-10 pt-20">
+      <div className="container relative z-10 pt-24 pb-16">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="max-w-4xl"
+          className="max-w-3xl"
         >
-          <div className="flex items-center gap-4 mb-8">
-            <span className="inline-block px-3 py-1 bg-white/20 backdrop-blur-sm text-xs font-semibold tracking-widest uppercase">
-              Plot 804 • Wuye, Abuja
-            </span>
-            <div className="h-px w-12 bg-white/30"></div>
-          </div>
-
-          <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 leading-tight">
-            Institutional Real Estate. <br />
-            <span className="text-gold">Built on Certainty.</span>
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+            Own a Verified Luxury Apartment in Abuja —{' '}
+            <span className="text-gold">Before It's Built, Before Prices Rise.</span>
           </h1>
-          <p className="text-base md:text-xl text-white/90 mb-8 max-w-xl font-light leading-relaxed">
-            Partnered with the <strong>Enugu State Govt</strong>. EDGE Certified. Global C-of-O.
-            <span className="block mt-2">
-              Secure your capital in Abuja’s greenest district.
-            </span>
+
+          <p className="text-lg md:text-xl text-white/90 mb-10 max-w-2xl font-light leading-relaxed">
+            3-bedroom apartments from ₦162M. Government-backed. Milestone payments. Q2 2028 delivery.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center gap-0 mb-6">
-            <a
-              href="https://wa.me/2349067779344?text=Hello%2C%20I%20am%20interested%20in%20The%20Woodlands%2C%20Wuye.%20I%20would%20like%20to%20schedule%20an%20inspection."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn bg-white text-coffee hover:bg-stone px-10 min-w-[200px] text-center flex items-center justify-center"
-            >
-              Secure Allocation
-            </a>
-            <a
-              href="https://wa.me/2349067779344?text=Hello%2C%20I%20am%20interested%20in%20The%20Woodlands%2C%20Wuye.%20Please%20share%20the%20current%20availability%20list."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn bg-coffee text-white border-l border-white/20 hover:bg-navy-900 px-10 min-w-[200px] flex items-center justify-center gap-2"
-            >
-              View Availability <ChevronRight size={16} />
-            </a>
-          </div>
+          <a
+            href={WHATSAPP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block w-full sm:w-auto sm:inline-flex btn bg-gold text-coffee hover:bg-white px-10 py-5 text-center font-bold text-base tracking-wide"
+          >
+            Get Full Details on WhatsApp →
+          </a>
 
-          <p className="text-[10px] text-white/40 italic">
-            *Source: Nigeria Property Centre Market Data (Jan 2024 - Jan 2025). Past performance does not guarantee future results.
+          <p className="mt-4 text-sm text-white/60">
+            Our property consultant answers instantly, 24/7. No sales pressure.
           </p>
         </motion.div>
-
-        {/* Floating Trust Badge / Ticker Bottom Right */}
-        <div className="absolute bottom-12 right-6 md:right-12 z-20 hidden md:block">
-          <div className="bg-white/10 backdrop-blur-md p-6 rounded-none border-l-2 border-gold max-w-sm">
-            <p className="text-sm text-white/80 italic mb-4">
-              "Seemlessly blending advanced digital tools with trusted local expertise."
-            </p>
-            <div className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-full bg-gold flex items-center justify-center text-coffee font-bold text-xs">A</div>
-              <div>
-                <p className="text-xs font-bold">Official JV</p>
-                <p className="text-[10px] text-white/60">Enugu State Govt</p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
